@@ -8,7 +8,15 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <ul>
+                        <li> <a href="{{ URL('/estado')}}">estado</a></li>
+                        <li><a href="{{ URL('/cliente')}}">cliente</a></li>
+                        <li><a href="{{ URL('/tipo')}}">tipos de materiais</a></li>
+                    </ul>
+
+
+
+                    <br>
                 </div>
             </div>
         </div>
