@@ -22,4 +22,6 @@ Route::group(['middleware'=> ['web']],function (){
     Route::resource('/estado','EstadoController');
     Route::resource('/cliente','ClienteController');
     Route::resource('/tipo','TipoController');
+    Route::resource('/comprapedido','ComprapedidoController');
+    Route::resource('/compra','CompraController');
 });

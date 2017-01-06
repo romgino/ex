@@ -31,7 +31,8 @@ class ClienteController extends Controller
         $item->email2 = $request->formEmail2;
         $item->obs = $request->formObs;
         $item->historico.= "<br> " . date('d-m-Y H:i') . " | " . $request->user
-            ." | criação ";
+            ." | criação  <br>" . print_r($request->all(),true);
+
         $item->save();
 
         return redirect()->action('ClienteController@show',$item->id);
